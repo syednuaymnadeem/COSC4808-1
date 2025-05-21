@@ -12,7 +12,7 @@ $password = $_REQUEST['password'];
 if ($username == $valid_username && $password == $valid_password) 
 {
   $_SESSION['username'] = $username;
-  $_SESSION['Failed Attempts'] = 0;
+  $_SESSION['authenticated'] = 1;
   header("Location: /");
 } else {
 
