@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>PHP Test</title>
-  </head>
-  <body>
-    <?php echo '<p>Hello World</p>'; ?> 
-    <?php echo '<p>This My First PHP Code</p>'; ?> 
-    <?php echo '<p>This My First PHP Code Change</p>'; ?>
+<head>
+<title>COSC 4806</title>
+</head>
+<body>
 
+<h1>Assignment-1</h1>
+
+
+</body>
 </html>
