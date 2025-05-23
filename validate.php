@@ -16,15 +16,16 @@ if ($username == $valid_username && $password == $valid_password)
   header("Location: /");
 } else {
 
-  if (!isset($_SESSION['Failed Attempts']))
+  if (!isset($_SESSION['Failed_Attempts']))
   {
-    $_SESSION['Failed Attempts'] = 1; 
+    $_SESSION['Failed_Attempts'] = 1; 
   }
   else
   {
-    $_SESSION['Failed Attempts'] = $_SESSION['Failed Attempts']+1;
+    $_SESSION['Failed_Attempts'] = $_SESSION['Failed_Attempts']+1;
   }
-  echo "Login Failed. The Number of Unsuccessful Attempts are: ".$_SESSION['Failed Attempts'];
+  header("Location: /login.php");
+  // echo "Login Failed. The Number of Unsuccessful Attempts are: ".$_SESSION['Failed_Attempts'];
 
 }
 
